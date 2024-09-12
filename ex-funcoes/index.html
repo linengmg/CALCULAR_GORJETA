@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Gorjetas</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+        body {
+            font-family: "EB Garamond", serif;
+            font-size: 22px;
+            text-align: center;
+            margin-top: 50px;
+            background-color: bisque;
+        }
+        input, select, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: goldenrod;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando Gorjetas</h1>
+    <label for="totalConta">Valor total da conta:</label>
+    <input type="number" id="totalConta" placeholder="Ex: 100.00"><br>
+    
+    <label for="avaliarServico">Avaliar Serviço:</label>
+    <select id="avaliarServico">
+        <option value="bom">Bom</option>
+        <option value="regular">Regular</option>
+        <option value="ruim">Ruim</option>
+    </select><br>
+
+    <button id="calcularBtn">Calcular Gorjeta</button>
+
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
